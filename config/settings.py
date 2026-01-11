@@ -1,0 +1,27 @@
+# 模型配置（整合新增的模型列表）
+from config.model_config import (
+    SUPPORTED_LLM_MODELS,
+    SUPPORTED_EMBEDDING_MODELS,
+    DEFAULT_LLM_MODEL,
+    DEFAULT_EMBEDDING_MODEL
+)
+
+# Ollama服务地址
+OLLAMA_HOST = "http://127.0.0.1:11434"
+
+# 动态模型配置（默认值）
+LLM_MODEL = DEFAULT_LLM_MODEL
+EMBEDDING_MODEL = DEFAULT_EMBEDDING_MODEL
+
+# 向量库配置
+FAISS_INDEX_PATH = "./faiss_local_index"
+TOP_K = 3
+
+# 文档处理配置
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 100
+
+# Gradio配置
+GRADIO_HOST = "127.0.0.1"
+GRADIO_PORT = 7860
+GRADIO_SHARE = False

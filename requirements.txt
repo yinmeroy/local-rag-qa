@@ -1,0 +1,10 @@
+# 核心依赖（全部验证过，无兼容问题）
+langchain==0.1.17
+langchain-core==0.1.52
+langchain-community==0.0.38
+langchain-text-splitters==0.0.1
+faiss-cpu==1.8.0.post1
+PyPDF2==3.0.1
+gradio==3.48.0  # 3.x稳定版，彻底避开4.x的Schema bug
+ollama==0.2.0
+numpy==1.26.4
